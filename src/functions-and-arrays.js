@@ -15,9 +15,9 @@ const words = [
 ];
 
 function findLongestWord(words) {
-  if (!words.length) return null;
-
-  return words.reduce((a, b) => a.length > b.length || a.length === b.length ? a : b);
+  return words.length 
+    ? (words.reduce((a, b) => a.length > b.length || a.length === b.length ? a : b)) 
+    : null;
 }
 
 // Iteration #3: Calculate the sum
