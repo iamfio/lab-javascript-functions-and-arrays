@@ -17,9 +17,7 @@ const words = [
 function findLongestWord(words) {
   if (!words.length) return null;
 
-  return words.reduce((a, b) => {
-    return a.length > b.length || a.length === b.length ? a : b;
-  });
+  return words.reduce((a, b) => a.length > b.length || a.length === b.length ? a : b);
 }
 
 // Iteration #3: Calculate the sum
@@ -142,7 +140,7 @@ const wordsCount = [
 function howManyTimes(wordsCount, word) {
   if (!wordsCount.length) return 0
   if (!wordsCount.includes(word)) return 0
-  
+
   const count = {}
 
   for (let el of wordsCount) {
